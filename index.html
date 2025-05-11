@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Terrenate Tlaxcala - Turismo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-dev-4.min.css">
+    <!-- animate for web -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Icons Awesome CSS --> 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- jQuery-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Tipos de letras -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+    <!-- animate for web -->
+    <script src="js/wow.min.js"></script>
+    <!-- animate for scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+    <!-- sitio js personalizado -->
+    <script src="js/sitio.js"></script>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body class="index-body" id="content"> 
+<section class="bienvenidos">
+    <div class="video-background">
+        <video autoplay muted loop id="video-bg">
+            <source src="img/spinergy-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    
+    
+    <header class="encabezado navbar fixed-top" role="banner" id="encabezado" data-scroll>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"><span class="NoEstilo"> Terrenate Tlaxcala </span> </a>
+
+            <button class="boton-menu d-md-none" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav id="menu-principal" class="collapse">
+                <ul>
+                    <li class="active"> <a href="index.html">Inicio</a></li>
+                    <li> <a href="nosotros.html">Nosotros</a></li>
+                    <li> <a href="proyectos.html">Proyectos</a></li>    
+                    <li> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="texto-encabezado text-center">
+        <div class="container">
+            <h1 class="display-4 wow bounceIn">Descubre Terrenate</h1>
+            <p class="wow fadeInDown" data-wow-delay=".3s">Un rincón mágico de Tlaxcala donde la tradición y la naturaleza se unen</p>
+            <a href="#lugares" class="btn btn-primary btn-lg wow fadeInDown" data-wow-delay=".2s">Explorar</a>
+            <!-- Imagen agregada aquí -->
+            <div class="mt-4 wow fadeInUp" data-wow-delay=".4s">
+                <img src="img/logo2.webp" alt="Terrenate Tlaxcala" class="img-fluid" style="max-height: 400px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="flecha-bajar text-center">
+        <a href="#lugares"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+    </div>
+</section>
+
+<section class="lugares-destacados py-5" id="lugares" data-scroll>
+    <div class="container">
+        <div class="text-center mb-5 wow fadeInDown">
+            <h2 class="display-4 font-weight-bold">Lugares Imperdibles</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line bg-primary"></div>
+                <div class="divider-custom-icon"><i class="fa fa-map-marker text-primary"></i></div>
+                <div class="divider-custom-line bg-primary"></div>
+            </div>
+            <p class="lead">Descubre los tesoros de Terrenate</p>
+        </div>
+        
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-6 col-lg-3 mb-4 wow fadeInUp">
+                <div class="card-lugar h-100">
+                    <div class="card-img-container">
+                        <img src="img/tecoaque.jpg" alt="Zona Arqueológica de Tecoaque" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <span class="badge bg-primary">Arqueología</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5">Zona Arqueológica</h3>
+                        <p class="card-text">Explora las ruinas de este importante sitio prehispánico con historia viva.</p>
+                        <a href="" onclick="mostrarInfo(1)" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 2 -->
+            <div class="col-md-6 col-lg-3 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="card-lugar h-100">
+                    <div class="card-img-container">
+                        <img src="img/parroquia.jpg" alt="Parroquia de San Nicolás" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <span class="badge bg-primary">Arquitectura</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5">Parroquia Colonial</h3>
+                        <p class="card-text">Joyas arquitectónicas del siglo XVI con impresionantes retablos dorados.</p>
+                        <a href="" onclick="mostrarInfo(2)" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 3 -->
+            <div class="col-md-6 col-lg-3 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="card-lugar h-100">
+                    <div class="card-img-container">
+                        <img src="img/cascada.jpg" alt="Cascada de Atlihuetzía" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <span class="badge bg-primary">Naturaleza</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5">Cascada</h3>
+                        <p class="card-text">Impresionante salto de agua de 30m rodeado de exuberante vegetación.</p>
+                        <a href="" onclick="mostrarInfo(3)" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 4 -->
+            <div class="col-md-6 col-lg-3 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="card-lugar h-100">
+                    <div class="card-img-container">
+                        <img src="img/mirador.jpg" alt="Mirador de Terrenate" class="card-img-top">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <span class="badge bg-primary">Panorámico</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5">Mirador</h3>
+                        <p class="card-text">Vistas espectaculares del valle, perfectas para fotografías al atardecer.</p>
+                        <a href="" onclick="mostrarInfo(4)" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <p class="frase-destino font-italic text-muted wow fadeIn" data-wow-delay="0.4s">
+                "Terrenate: Donde cada rincón es una postal y cada visita un recuerdo"
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Carrusel de lugares turísticos -->
+<section class="ultimos-proyectos py-3">
+    <div class="container">
+        <h2 class="text-center font-weight-bold mb-4">Explora Nuestros Atractivos</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item" onclick="mostrarInfo(1)">
+                <img src="img/tecoaque.jpg" alt="Zona Arqueológica" class="img-fluid">
+                <h4>Zona Arqueológica</h4>
+            </div>
+            <div class="item" onclick="mostrarInfo(2)">
+                <img src="img/parroquia.jpg" alt="Parroquia" class="img-fluid">
+                <h4>Parroquia de San Nicolás</h4>
+            </div>
+            <div class="item" onclick="mostrarInfo(3)">
+                <img src="img/cascada.jpg" alt="Cascada" class="img-fluid">
+                <h4>Cascada de Atlihuetzía</h4>
+            </div>
+            <div class="item" onclick="mostrarInfo(4)">
+                <img src="img/mirador.jpg" alt="Mirador" class="img-fluid">
+                <h4>Mirador de Terrenate</h4>
+            </div>
+            <div class="item" onclick="mostrarInfo(5)">
+                <img src="img/artesania.jpg" alt="Artesanías" class="img-fluid">
+                <h4>Artesanías Locales</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ventana flotante para información -->
+<div id="ventana-info" class="oculto">
+    <div class="ventana-contenido">
+        <button onclick="cerrarVentana()" class="cerrar-btn"><i class="fa fa-times"></i></button>
+        
+        <div id="info-1" class="info">
+            <h3>Zona Arqueológica de Tecoaque</h3>
+            <img src="img/tecoaque.jpg" alt="Tecoaque" class="img-fluid mb-3">
+            <p>Este importante sitio arqueológico fue un asentamiento prehispánico donde se han encontrado vestigios de la cultura tlaxcalteca. El nombre Tecoaque significa "lugar donde se comieron a los dioses".</p>
+            <p><strong>Horario:</strong> Martes a domingo de 9:00 a 17:00 hrs</p>
+            <p><strong>Costo:</strong> $55 pesos</p>
+        </div>
+        
+        <div id="info-2" class="info">
+            <h3>Parroquia de San Nicolás Tolentino</h3>
+            <img src="img/parroquia.jpg" alt="Parroquia" class="img-fluid mb-3">
+            <p>Construida en el siglo XVI, esta parroquia es un excelente ejemplo de arquitectura colonial. Su fachada de estilo barroco y sus retablos dorados en el interior son verdaderas obras de arte.</p>
+            <p><strong>Ubicación:</strong> Plaza principal de Terrenate</p>
+        </div>
+        
+        <div id="info-3" class="info">
+            <h3>Cascada de Atlihuetzía</h3>
+            <img src="img/cascada.jpg" alt="Cascada" class="img-fluid mb-3">
+            <p>Un espectacular salto de agua de aproximadamente 30 metros de altura, rodeado de vegetación. Ideal para días de campo y contacto con la naturaleza.</p>
+            <p><strong>Recomendaciones:</strong> Llevar zapatos cómodos y ropa para cambiarse</p>
+        </div>
+        
+        <div id="info-4" class="info">
+            <h3>Mirador de Terrenate</h3>
+            <img src="img/mirador.jpg" alt="Mirador" class="img-fluid mb-3">
+            <p>Desde este punto estratégico podrás apreciar panorámicas espectaculares del valle de Terrenate y sus alrededores. Perfecto para tomar fotografías al atardecer.</p>
+        </div>
+        
+        <div id="info-5" class="info">
+            <h3>Artesanías Locales</h3>
+            <img src="img/artesania.jpg" alt="Artesanías" class="img-fluid mb-3">
+            <p>Terrenate es famoso por sus textiles tradicionales, cerámica y cestería. No te vayas sin llevar un recuerdo hecho por las hábiles manos de los artesanos locales.</p>
+        </div>
+    </div>
+</div>
+
+<section class="gastronomia-tradicional py-5" id="gastronomia">
+    <div class="container">
+        <div class="text-center mb-5 wow fadeIn">
+            <h2 class="display-4 font-weight-bold text-primary">Gastronomía Tradicional</h2>
+            <div class="divider-custom divider-primary">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa fa-utensils"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="lead">Sabores que cuentan nuestra historia</p>
+        </div>
+
+        <!-- Plato 1 - Imagen a la derecha -->
+        <div class="row align-items-center mb-5 gastronomia-item wow fadeIn">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="gastronomia-content">
+                    <h3 class="mb-3">Mole de Matuma</h3>
+                    <p class="text-muted">El plato estrella de Terrenate, preparado con una mezcla secreta de chiles locales, especias y chocolate. Tradicionalmente servido con carne de cerdo y acompañado de arroz.</p>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fa fa-clock-o mr-2"></i> Tiempo preparación: 4-5 horas</li>
+                        <li><i class="fa fa-calendar mr-2"></i> Disponible todo el año</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gastronomia-img rounded-lg overflow-hidden shadow">
+                    <img src="img/mole-matuma.jpg" alt="Mole de Matuma" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Plato 2 - Imagen a la izquierda -->
+        <div class="row align-items-center mb-5 gastronomia-item wow fadeIn">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <div class="gastronomia-content">
+                    <h3 class="mb-3">Pulque Natural</h3>
+                    <p class="text-muted">La bebida sagrada de nuestros antepasados, fermentada naturalmente del agave. Con propiedades probióticas y un sabor único que varía según la temporada.</p>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fa fa-flask mr-2"></i> Fermentación: 2-3 semanas</li>
+                        <li><i class="fa fa-leaf mr-2"></i> Variantes: Natural, curado con frutas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="gastronomia-img rounded-lg overflow-hidden shadow">
+                    <img src="img/pulque.jpg" alt="Pulque Natural" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Plato 3 - Imagen a la derecha -->
+        <div class="row align-items-center mb-5 gastronomia-item wow fadeIn">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="gastronomia-content">
+                    <h3 class="mb-3">Pan de Feria</h3>
+                    <p class="text-muted">Horneado en fogones de leña durante las fiestas patronales. Disponible en variedades como: cemitas, cocoles y rosquillas, cada uno con su propio significado cultural.</p>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fa fa-fire mr-2"></i> Cocción: Horno de leña</li>
+                        <li><i class="fa fa-star mr-2"></i> Especialidad: Septiembre</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gastronomia-img rounded-lg overflow-hidden shadow">
+                    <img src="img/pan-feria.jpg" alt="Pan de Feria" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Plato 4 - Imagen a la izquierda -->
+        <div class="row align-items-center gastronomia-item wow fadeIn">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <div class="gastronomia-content">
+                    <h3 class="mb-3">Atole de Pinole</h3>
+                    <p class="text-muted">Bebida caliente reconfortante hecha de maíz tostado y molido, endulzado con piloncillo. Tradicionalmente consumida en las mañanas frías o como acompañamiento.</p>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fa fa-coffee mr-2"></i> Mejor momento: Desayuno</li>
+                        <li><i class="fa fa-thermometer-three-quarters mr-2"></i> Servir: Bien caliente</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="gastronomia-img rounded-lg overflow-hidden shadow">
+                    <img src="img/atole.jpg" alt="Atole de Pinole" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="experiencias py-5" id="experiencias">
+    <div class="container">
+        <div class="text-center mb-5 wow fadeIn">
+            <h2 class="display-4 font-weight-bold">Experiencias Únicas</h2>
+            <div class="divider-custom divider-primary">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="lead">Vive Terrenate más allá del turismo convencional</p>
+        </div>
+
+        <div class="row">
+            <!-- Experiencia 1 -->
+            <div class="col-md-4 mb-4 wow fadeInUp">
+                <div class="card-experiencia h-100" onclick="mostrarVideo('video1')">
+                    <div class="card-experiencia-img">
+                        <img src="img/taller-artesania.jpg" alt="Taller de Artesanías" class="img-fluid">
+                        <div class="card-experiencia-overlay">
+                            <i class="fa fa-play-circle"></i>
+                            <h3>Taller de Artesanías</h3>
+                        </div>
+                    </div>
+                    <div class="card-experiencia-body">
+                        <p>Aprende técnicas ancestrales directamente de los maestros artesanos</p>
+                        <div class="badges">
+                            <span class="badge badge-duration"><i class="fa fa-clock-o"></i> 3 horas</span>
+                            <span class="badge badge-group"><i class="fa fa-users"></i> Grupos pequeños</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiencia 2 -->
+            <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="card-experiencia h-100" onclick="mostrarVideo('video2')">
+                    <div class="card-experiencia-img">
+                        <img src="img/ruta-gastronomica.jpg" alt="Ruta Gastronómica" class="img-fluid">
+                        <div class="card-experiencia-overlay">
+                            <i class="fa fa-play-circle"></i>
+                            <h3>Ruta Gastronómica</h3>
+                        </div>
+                    </div>
+                    <div class="card-experiencia-body">
+                        <p>Descubre los sabores auténticos en los mercados locales y cocinas tradicionales</p>
+                        <div class="badges">
+                            <span class="badge badge-duration"><i class="fa fa-clock-o"></i> Medio día</span>
+                            <span class="badge badge-food"><i class="fa fa-cutlery"></i> Degustación incluida</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiencia 3 -->
+            <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="card-experiencia h-100" onclick="mostrarVideo('video3')">
+                    <div class="card-experiencia-img">
+                        <img src="img/caminata-nocturna.jpg" alt="Caminata Nocturna" class="img-fluid">
+                        <div class="card-experiencia-overlay">
+                            <i class="fa fa-play-circle"></i>
+                            <h3>Caminata Nocturna</h3>
+                        </div>
+                    </div>
+                    <div class="card-experiencia-body">
+                        <p>Explora los paisajes bajo las estrellas con guías locales expertos</p>
+                        <div class="badges">
+                            <span class="badge badge-duration"><i class="fa fa-clock-o"></i> 2 horas</span>
+                            <span class="badge badge-season"><i class="fa fa-calendar"></i> Todo el año</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="#contacto" class="btn btn-primary btn-lg">Reserva tu experiencia</a>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para videos -->
+<div id="videoModal" class="modal-video">
+    <div class="modal-video-content">
+        <span class="close-video" onclick="cerrarVideo()">&times;</span>
+        <div class="video-container">
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Información adicional para festividades -->
+<div id="info-6" class="info" style="display:none;">
+    <h3>Fiesta Patronal de San Nicolás Tolentino</h3>
+    <img src="img/fiesta.jpg" alt="Fiesta Patronal" class="img-fluid mb-3">
+    <p>La máxima celebración de Terrenate incluye:</p>
+    <ul>
+        <li>Procesiones religiosas</li>
+        <li>Feria popular con juegos mecánicos</li>
+        <li>Eventos culturales y conciertos</li>
+        <li>Fuegos artificiales</li>
+        <li>Venta de artesanías y comida tradicional</li>
+    </ul>
+</div>
+
+<div id="info-7" class="info" style="display:none;">
+    <h3>Semana Santa en Terrenate</h3>
+    <img src="img/semana-santa.jpg" alt="Semana Santa" class="img-fluid mb-3">
+    <p>Celebraciones tradicionales que incluyen:</p>
+    <ul>
+        <li>Representación del Vía Crucis</li>
+        <li>Procesión del Silencio</li>
+        <li>Alfombras de aserrín y flores</li>
+        <li>Misas especiales</li>
+    </ul>
+</div>
+
+<div id="info-8" class="info" style="display:none;">
+    <h3>Feria Agrícola y Ganadera</h3>
+    <img src="img/feria.jpg" alt="Feria Agrícola" class="img-fluid mb-3">
+    <p>Evento anual donde podrás:</p>
+    <ul>
+        <li>Conocer los productos agrícolas de la región</li>
+        <li>Degustar platillos tradicionales</li>
+        <li>Asistir a concursos ganaderos</li>
+        <li>Comprar directamente a los productores</li>
+    </ul>
+</div>
+
+<section class="guia-interactiva py-5" id="guia">
+    <div class="container">
+        <div class="text-center mb-5 wow fadeIn">
+            <h2 class="display-4 font-weight-bold text-white">Guía Turística Interactiva</h2>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa fa-map-marked-alt"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="lead text-white">Descubre los tesoros de Terrenate</p>
+        </div>
+
+        <div class="row">
+            <!-- Lista de lugares -->
+            <div class="col-lg-4 mb-4">
+                <div class="list-group lugares-lista">
+                    <a href="" class="list-group-item list-group-item-action active-lugar" 
+                       data-lugar="tecoaque" onclick="mostrarLugar('tecoaque', this)">
+                        <i class="fa fa-university mr-2"></i> Zona Arqueológica de Tecoaque
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action" 
+                       data-lugar="parroquia" onclick="mostrarLugar('parroquia', this)">
+                        <i class="fa fa-church mr-2"></i> Parroquia de San Nicolás
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action" 
+                       data-lugar="cascada" onclick="mostrarLugar('cascada', this)">
+                        <i class="fa fa-water mr-2"></i> Cascada de Atlihuetzía
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action" 
+                       data-lugar="mirador" onclick="mostrarLugar('mirador', this)">
+                        <i class="fa fa-binoculars mr-2"></i> Mirador de Terrenate
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action" 
+                       data-lugar="artesanias" onclick="mostrarLugar('artesanias', this)">
+                        <i class="fa fa-hands-helping mr-2"></i> Talleres de Artesanías
+                    </a>
+                </div>
+
+                <div class="card mt-4 info-lugar-card" id="info-lugar">
+                    <div class="card-body">
+                        <h4 class="card-title" id="lugar-titulo">Selecciona un lugar</h4>
+                        <p class="card-text" id="lugar-descripcion">Haz clic en un punto de interés para ver detalles</p>
+                        <div id="lugar-horario"></div>
+                        <a href="" class="btn btn-primary btn-sm mt-2" id="lugar-mapa-link" target="_blank">
+                            <i class="fa fa-map-marker-alt"></i> Ver en mapa completo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mapa interactivo -->
+            <div class="col-lg-8">
+                <div class="mapa-container rounded-lg shadow">
+                    <iframe id="mapa-interactivo" class="mapa-iframe" frameborder="0" scrolling="no"
+                        src="https://maps.google.com/maps?q=19.284284,-98.244389&z=14&output=embed">
+                    </iframe>
+                    <!-- Marcadores personalizados -->
+                    <div class="mapa-marcador" data-lugar="tecoaque" style="top:30%; left:40%;">
+                        <i class="fa fa-map-pin"></i>
+                    </div>
+                    <div class="mapa-marcador" data-lugar="parroquia" style="top:45%; left:50%;">
+                        <i class="fa fa-map-pin"></i>
+                    </div>
+                    <div class="mapa-marcador" data-lugar="cascada" style="top:60%; left:35%;">
+                        <i class="fa fa-map-pin"></i>
+                    </div>
+                    <div class="mapa-marcador" data-lugar="mirador" style="top:25%; left:55%;">
+                        <i class="fa fa-map-pin"></i>
+                    </div>
+                    <div class="mapa-marcador" data-lugar="artesanias" style="top:50%; left:45%;">
+                        <i class="fa fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Galería Fotográfica Mejorada -->
+<section class="gallery-section py-5" id="galeria">
+    <div class="container">
+        <div class="section-header text-center mb-5 wow fadeIn">
+            <h2 class="display-4 font-weight-bold">Galería Fotográfica</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line bg-primary"></div>
+                <div class="divider-custom-icon"><i class="fa fa-camera text-primary"></i></div>
+                <div class="divider-custom-line bg-primary"></div>
+            </div>
+            <p class="lead">Descubre la belleza de Terrenate a través de nuestras imágenes</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Imagen 1 con efecto hover y categoría -->
+            <div class="gallery-item wow fadeInUp" data-wow-delay="0.1s">
+                <div class="gallery-image-container">
+                    <img src="img/galeria1.jpg" alt="Paisaje de Terrenate" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Paisajes Naturales</h3>
+                            <p>Vistas espectaculares de nuestros entornos</p>
+                            <button class="btn btn-sm btn-light" onclick="abrirModal('img/galeria1.jpg')">
+                                <i class="fa fa-search-plus"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="gallery-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="gallery-image-container">
+                    <img src="img/galeria2.jpg" alt="Arquitectura de Terrenate" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Arquitectura</h3>
+                            <p>Nuestro patrimonio histórico</p>
+                            <button class="btn btn-sm btn-light" onclick="abrirModal('img/galeria2.jpg')">
+                                <i class="fa fa-search-plus"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="gallery-item wow fadeInUp" data-wow-delay="0.3s">
+                <div class="gallery-image-container">
+                    <img src="img/galeria3.jpg" alt="Gastronomía de Terrenate" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Gastronomía</h3>
+                            <p>Sabores tradicionales</p>
+                            <button class="btn btn-sm btn-light" onclick="abrirModal('img/galeria3.jpg')">
+                                <i class="fa fa-search-plus"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="gallery-item wow fadeInUp" data-wow-delay="0.4s">
+                <div class="gallery-image-container">
+                    <img src="img/galeria4.jpg" alt="Festividades de Terrenate" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Festividades</h3>
+                            <p>Tradiciones y celebraciones</p>
+                            <button class="btn btn-sm btn-light" onclick="abrirModal('img/galeria4.jpg')">
+                                <i class="fa fa-search-plus"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="gallery-item wow fadeInUp" data-wow-delay="0.5s">
+                <div class="gallery-image-container">
+                    <img src="img/galeria5.jpg" alt="Artesanías de Terrenate" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Artesanías</h3>
+                            <p>Trabajos artesanales locales</p>
+                            <button class="btn btn-sm btn-light" onclick="abrirModal('img/galeria5.jpg')">
+                                <i class="fa fa-search-plus"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 6 -->
+            <div class="gallery-item wow fadeInUp" data-wow-delay="0.6s">
+                <div class="gallery-image-container">
+                    <img src="img/galeria6.jpg" alt="Gente de Terrenate" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Comunidad</h3>
+                            <p>Nuestra gente y cultura</p>
+                            <button class="btn btn-sm btn-light" onclick="abrirModal('img/galeria6.jpg')">
+                                <i class="fa fa-search-plus"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-primary btn-lg" id="load-more">
+                <i class="fa fa-image"></i> Ver más fotos
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para galería mejorado -->
+<div id="modal-galeria" class="modal-galeria">
+    <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+    <div class="modal-navigation">
+        <button class="modal-nav-btn" onclick="navigateModal(-1)"><i class="fa fa-chevron-left"></i></button>
+        <div class="modal-content-container">
+            <img class="modal-contenido" id="img-modal">
+            <div class="modal-caption" id="caption"></div>
+        </div>
+        <button class="modal-nav-btn" onclick="navigateModal(1)"><i class="fa fa-chevron-right"></i></button>
+    </div>
+</div>
+
+<footer class="piedepagina py-2" role="contentinfo">
+    <div class="container"> 
+        <p>2023 © Terrenate Tlaxcala - Todos los derechos reservados</p>
+        <ul class="redes-sociales">
+            <li><a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> </a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> </a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+        </ul>
+    </div>
+</footer>
+
+<a href="#encabezado" class="ir-arriba"><i class="fa fa-arrow-up" aria-hidden="true"></i> </a>
+
+<!-- Scripts adicionales -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    // Inicializar Owl Carousel
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        });
+    });
+    
+    // Función para abrir modal de galería
+    function abrirModal(src) {
+        var modal = document.getElementById("modal-galeria");
+        var modalImg = document.getElementById("img-modal");
+        modal.style.display = "block";
+        modalImg.src = src;
+    }
+    
+    function cerrarModal() {
+        document.getElementById("modal-galeria").style.display = "none";
+    }
+    
+    // Cerrar modal al hacer clic fuera de la imagen
+    window.onclick = function(event) {
+        var modal = document.getElementById("modal-galeria");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    
+</script>
+</body>
+</html>
